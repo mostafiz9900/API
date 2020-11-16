@@ -8,12 +8,14 @@ app.use(express.json());
 const userRoutes=require('./routes/user-routes');
 app.use('/api/users',userRoutes);
 
-// const profileRoutes=require('./routes/profile-routes');
-// app.use('/api/profile', profileRoutes);
+const profileRoutes=require('./routes/profile-routes');
+app.use('/api/profile', profileRoutes);
 
 
-// const postRoutes=require('./routes/post-routes');
-// app.use('/api/post/',postRoutes);
+const postRoutes=require('./routes/post-routes');
+app.use('/api/post/',postRoutes);
+const studentRoutes=require('./routes/student-routes');
+app.use('/api/student/',studentRoutes);
 
 
 
